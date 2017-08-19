@@ -1,0 +1,17 @@
+body {
+	font-family: Open Sans, Arial, sans-serif;
+	font-size:  15px;
+	color: #464646;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.services-slider-slide-title,
+.company-title {
+	font-family: Gilory, Arial, sans-serif;
+	font-size: 47px;
+	line-height: normal;
+	font-weight: 900;
+	color: #000000;
+
+}

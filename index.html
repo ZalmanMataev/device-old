@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
     <meta name="keywords" content="">
   	<meta name="description" content="">  
   </head>
@@ -93,9 +94,9 @@
                 <span class="promo-slide-number">
                   01
                 </span>
-                <h2 class="promo-slide-slogan">
+                <span class="promo-slide-slogan">
                   Делай селфи, как Бен Стиллер!
-                </h2>
+                </span>
                 <p class="promo-slide-description">
                   Самая длинная палка для селфи оступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -125,9 +126,9 @@
                 <span class="promo-slide-number">
                   02
                 </span>
-                <h2 class="promo-slide-slogan">
+                <span class="promo-slide-slogan">
                   Худеем правильно!
-                </h2>
+                </span>
                 <p class="promo-slide-description">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
@@ -152,9 +153,9 @@
                 <span class="promo-slide-number">
                   03
                 </span>
-                <h2 class="promo-slide-slogan">
+                <span class="promo-slide-slogan">
                   Порхает как бабочка, жалит как пчела!
-                </h2>
+                </span>
                 <p class="promo-slide-description">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
@@ -220,9 +221,41 @@
           </li>
         </ul>
 
-        <div>
-          
-          Слайдер
+        <div class="services">
+          <div class="services-wrapper">
+            <input class="services-input" id="service-1" name="services" type="radio" checked>
+            <input class="services-input" id="service-2" name="services" type="radio">
+            <input class="services-input" id="service-3" name="services" type="radio">
+          <div class="services-slider">
+            <label class="btn  services-slider" for="service-1">
+              Доставка
+            </label>
+            <label class="btn  services-slider" for="service-2">
+              Гарантия
+            </label>
+            <label class="btn  services-slider" for="service-3">
+              Кредит
+            </label>
+          </div>          
+          <div class="services-slider-slide">
+            <h2 class="services-slider-slide-title">Доставка</h2>
+            <p class="services-slider-slide-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <div class="services-slider-slide">
+            <h2 class="services-slider-slide-title">Гарантия</h2>
+            <p class="services-slider-slide-text">
+              Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+          <div class="services-slider-slide">
+            <h2 class="services-slider-slide-title">Кредит</h2>
+            <p class="services-slider-slide-text">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+          </div>
+          </div>          
         </div>
 
         <div class="brends">
@@ -252,7 +285,7 @@
 
         <div class="company">
           <section class="abaut-us">
-            <h2 class="company-title">О нас</h2>
+            <h3 class="company-title">О нас</h3>
             <p class="company-content">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
@@ -268,7 +301,7 @@
           </section>
 
           <section class="contacts">
-            <h2 class="company-title">Контакты</h2>
+            <h3 class="company-title">Контакты</h3>
             <p class="company-content">
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
@@ -354,7 +387,7 @@
       </form>
     </div>
     <div class="popup-map">
-      <img src="img/map.png" width="560" height="222" alt="Карта. Наш адрес: ул. Строителей 15">
+      <img src="img/map-big.png" width="960" height="599" alt="Карта. Наш адрес: ул. Строителей 15">
     </div>
   </body>
 </html>
