@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">    
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <meta name="keywords" content="">
   	<meta name="description" content="">  
   </head>
   <body>
 
   	<header class="main-heder">
-      <div class="container">
-        <a href="#" class="main-logo">
+      <div class="main-heder-container">
+        <div  class="main-logo">
           <img src="img/logo.png" alt="логотим модного интернет магазина гаджетов DEVICE" width="164" height="36">
-        </a>
+        </div>
         <nav class="user-navigation">
           <form class="user-search" method="get" action="https://device.ru">
             <label class="search-label" for="search">             
@@ -21,23 +23,22 @@
             <input class="search-input" id="search" type="text" name="search" placeholder="поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
-          <ul class="user-block">            
-            <li>
-              <a href="#" class="user-block-id">Валентин Петухов</a>
-            </li>
-            <li>
-              <a href="#" class="user-block-exit">Выйти</a>
-            </li>
-            <li>
-              <a href="#" class="entry">Войти</a>
-            </li>
-            <li>
-              <a href="#" class="compare">Сравнить</a>
-            </li>
-            <li>
-              <a href="#" class="basket">Корзина</a>
-            </li>
-          </ul>
+
+          <div class="user-block">            
+            <div class="user-block-Loggedin">
+              <a href="#" class="user-block-contact user-block-id">Валентин Петухов</a>       
+              <a href="#" class="user-block-contact user-block-exit">Выйти</a>
+            </div>
+
+            <div class="user-block-Loggedon">
+              <a href="#" class="user-block-contact entry">Войти</a>
+            </div>
+            <div class="user-block-compare-basket">
+              <a href="#" class="user-block-contact compare">Сравнить</a>
+              <a href="#" class="user-block-contact basket">Корзина</a>
+            </div>
+          </div>
+
         </nav>
         <nav class="main-navigation">
           <ul class="main-menu">

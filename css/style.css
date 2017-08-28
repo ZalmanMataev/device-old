@@ -1,10 +1,38 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
 body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	min-width: 1200px;
 	font-family: Open Sans, Arial, sans-serif;
 	font-size:  15px;
 	color: #464646;
 	line-height: 30px;
 	font-weight: 300;
 }
+
+a {
+	text-decoration: none;
+}
+
 
 .services-slider-slide-title,
 .company-title {
@@ -14,4 +42,147 @@ body {
 	font-weight: 900;
 	color: #000000;
 
+}
+
+/*יheader*/
+.main-heder {
+	padding-top: 40px;
+}
+
+.main-heder-container {
+  width: 1040px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 47;
+  padding-bottom: 50px;  /**/
+
+
+  background-color: #f7e296;
+
+  position: relative;
+}
+
+.main-logo {
+position: absolute;
+top: -18px;
+}
+
+.main-logo a:hover {
+	opacity: 0.6;
+}
+
+.main-logo a:active,
+.main-logo a:focus {
+	opacity: 0.3;	
+}
+
+.user-navigation {
+	padding-top: 50px;
+	display: flex;
+
+}
+
+/*search*/
+
+.user-search {
+	
+}
+
+
+.search-label {
+}
+
+
+.search-input {
+	border: none;
+	color: #000000;
+	font: inherit;
+	outline: none;
+}
+
+.search-input:focus {
+	border-top: 2px solid transparent;
+  	border-bottom: 2px solid #000000;
+}	
+
+.search-input::-webkit-input-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:hover::-webkit-input-placeholder {
+	opacity: 0.6;
+}
+
+.search-input:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.search-input::-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:hover::-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:focus::-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:hover:-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:focus:-moz-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:hover:-ms-input-placeholder {
+	opacity: 0.3;	
+}
+
+.search-input:focus:-ms-input-placeholder {
+	opacity: 0.3;	
+}
+
+.search-button {
+	font: inherit;
+	/*display: none;*/
+	color: #000000;
+	text-align: center;
+	border: 2px solid #000000;
+	background-color: transparent;	
+}
+
+.search-button:hover {
+	color: #ffffff;
+	background: #000000;
+}
+
+.search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background: #000000;
+}	
+
+.user-block-contact {
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: #000000;  	
+  	line-height: 36px;
+  	font-size: 15px;
+  	font-weight: 300;
+  	text-decoration: none;
+  }
+
+.user-block-contact:hover {
+	opacity: 0.6;
+}
+
+.user-block-contact:active,
+.user-block-contact:focus {
+	opacity: 0.3;
 }
