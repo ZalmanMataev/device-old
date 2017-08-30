@@ -14,13 +14,14 @@
   	<header class="main-heder">
       <div class="main-heder-container">
         <div  class="main-logo">
-          <img src="img/logo.png" alt="логотим модного интернет магазина гаджетов DEVICE" width="164" height="36">
+          <a href="#">DEVICE</a>
+          <!-- <img src="img/logo.png" alt="логотим модного интернет магазина гаджетов DEVICE" width="164" height="36"> -->
         </div>
         <nav class="user-navigation">
           <form class="user-search" method="get" action="https://device.ru">
             <label class="search-label" for="search">             
             </label>  
-            <input class="search-input" id="search" type="text" name="search" placeholder="поиск по сайту">
+            <input class="search-input" id="search" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
 
@@ -30,7 +31,7 @@
               <a href="#" class="user-block-contact user-block-exit">Выйти</a>
             </div>
 
-            <div class="user-block-Loggedon">
+            <div class="user-block-Loggedon user-block-Loggedon-active">
               <a href="#" class="user-block-contact entry">Войти</a>
             </div>
             <div class="user-block-compare-basket">
@@ -42,26 +43,26 @@
         </nav>
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li>
-              <a href="#" class="main-menu-item">Каталог товаров</a>
+            <li class="main-menu-item">
+              <a href="#" >Каталог товаров</a>
               <ul class="menu-catalog">
-                <li>
-                  <a href="#" class="menu-catalog-item">Виртуальная реальность</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Виртуальная реальность</a>
                 </li>
-                <li>
-                  <a href="#" class="menu-catalog-item">Моноподы для селфи</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Моноподы для селфи</a>
                 </li>
-                <li>
-                  <a href="#" class="menu-catalog-item">Экшн-камеры</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Экшн-камеры</a>
                 </li>
-                <li>
-                  <a href="#" class="menu-catalog-item">Фитнес-браслеты</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Фитнес-браслеты</a>
                 </li>
-                <li>
-                  <a href="#" class="menu-catalog-item">Умные часы</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Умные часы</a>
                 </li>
-                <li>
-                  <a href="#" class="menu-catalog-item">Квадрокоптеры</a>
+                <li class="menu-catalog-item">
+                  <a href="#" >Квадрокоптеры</a>
                 </li>                          
               </ul>
             </li>
@@ -80,7 +81,7 @@
     </header>
 
     <main>
-      <h1>интеррнет магазин современных гаджетов</h1>
+      <h1 class="visually-hidden">интеррнет магазин современных гаджетов</h1>
       <div class="container">
         <div class="promo-slider">
           <input type="radio" id="btn-1" name="toggle" checked>
@@ -102,7 +103,7 @@
                   Самая длинная палка для селфи оступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a class="promo-slide-button" href="#" >
+                <a class="btn promo-slide-button" href="#" >
                    Подробнее
                 </a>
                  <table class="promo-slide-table">
@@ -133,7 +134,7 @@
                 <p class="promo-slide-description">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
-                 <a class="promo-slide-button" href="#" >
+                 <a class="btn promo-slide-button" href="#" >
                    Подробнее
                  </a>
                  <table class="promo-slide-table">
@@ -160,7 +161,7 @@
                 <p class="promo-slide-description">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a class="promo-slide-button" href="#" >
+                <a class="btn promo-slide-button" href="#" >
                   Подробнее
                 </a>
                 <table class="promo-slide-table">
@@ -314,11 +315,13 @@
         </div>
       </div>      
     </main>
-    <footer> 
+
+    <footer class="page-footer"> 
       <div class="container">
         <div class="row-top">
           <div class="row-top-logo">
-            <img src="img/logo.png" alt="логотим модного интернет магазина гаджетов DEVICE" width="164" height="36">
+            <a href="#">DEVICE</a>
+            <!-- <img src="img/logo.png" alt="логотим модного интернет магазина гаджетов DEVICE" width="164" height="36"> -->
           </div>
           <div class="row-top-user-block">
             <ul>
@@ -344,14 +347,14 @@
           </div>
           <nav class="row-middle-menu">
             <ul>
-              <li>
-                <a href="">Доставка</a>
+              <li class="row-middle-menu-item">
+                <a href="#" >Доставка</a>
               </li>
-              <li>
-                <a href="">Гарантия</a>
+              <li class="row-middle-menu-item">
+                <a href="#" >Гарантия</a>
               </li>
-              <li>
-                <a href="">Контакты</a>
+              <li class="row-middle-menu-item">
+                <a href="#" >Контакты</a>
               </li>
             </ul>
           </nav>
