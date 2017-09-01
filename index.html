@@ -184,44 +184,28 @@
           </div>
         </div>
 
-        <ul class="section-names">
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-1.svg" alt="Виртуальная реальность">
-              <p class="names-item-text">Виртуальная реальность</p>
-            </a>
-          </li>
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-2.svg" alt="Моноподы для селфи">
-              <p class="names-item-text">Моноподы для селфи</p>
-            </a>
-          </li>
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-3.svg" alt="Экшн-камеры">
-              <p class="names-item-text">Экшн-камеры</p>
-            </a>
-          </li>
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-4.svg" alt="Фитнес-браслеты">
-              <p class="names-item-text">Фитнес-браслеты</p>
-            </a>
-          </li>
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-4.svg" alt="Умные часы">
-              <p class="names-item-text">Умные часы</p>
-            </a>
-          </li>
-          <li class="section-names-item">
-            <a href="#">
-              <img src="img/popular-5.svg" alt="Квадрокоптеры">
-              <p class="names-item-text">Квадрокоптеры</p>
-            </a>
-          </li>
-        </ul>
+        <section>
+          <ul class="section-popular container">
+            <li class="section-item section-item-virtual-reality">
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li class="section-item section-item-monopods">
+              <a href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="section-item section-item-action-camera">
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li class="section-item section-item-fitness-wristbands">
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="section-item section-item-smart-watch">
+              <a href="#">Умные часы</a>
+            </li>
+            <li class="section-item section-item-quadrocopter">
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
 
         <div class="services">
           <div class="services-wrapper">
@@ -260,26 +244,26 @@
           </div>          
         </div>
 
-        <div class="brends">
-          <ul>
-            <li class="brends-item">
-              <a href="#">
-                <img src="img/logo-1.png" width="260" height="100" alt="логотип dji">
+        <div class="container">
+          <ul class="brands">
+            <li class="brands-item">
+              <a href="#" class="brands-link  brands-link-dji">
+                <img class="brands-img" src="img/Dji-gray.png" width="260" height="100" alt="логотип dji">
               </a>
             </li>
-            <li class="brends-item">
-              <a href="#">
-                <img src="img/logo-2.png" width="260" height="100" alt="логотип sp gadgets">
+            <li class="brands-item">
+              <a href="#" class="brands-link brands-link-gadgets">
+                <img class="brands-img" src="img/gadgets-gray.png" width="260" height="100" alt="логотип sp gadgets">
               </a>
             </li>
-            <li class="brends-item">
-              <a href="#">
-                <img src="img/logo-3.png" width="260" height="100" alt="логотип GoPro">
+            <li class="brands-item">
+              <a href="#" class="brands-link brands-link-GoPro">
+                <img class="brands-img" src="img/GoPro-gray.png" width="260" height="100" alt="логотип GoPro">
               </a>
             </li>
-            <li class="brends-item">
-              <a href="#">
-                <img src="img/logo-4.png" width="260" height="100" alt="логотип VIVE">
+            <li class="brands-item">
+              <a href="#" class="brands-link brands-link-Vive">
+                <img class="brands-img" src="img/vive-gray.png" width="260" height="100" alt="логотип VIVE">
               </a>
             </li>
           </ul>
@@ -377,17 +361,19 @@
     </footer>
     
     <div class="popup">
-      <button class="popup-close" type="button">Закрыть</button>      
+      <button class="popup-close" type="button">Закрыть</button> 
+
       <form class="popup-form" action="https://echo.test.ru" method="post">
-        <label  class="popup-name" for="name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name">
+        <label  class="popup-name" for="name">Ваше имя:
+          <input type="text" class="popup-input" name="name" placeholder="Представьтесь, пожалуйста" id="name">
+        </label>        
         <label  class="popup-email" for="email">Ваш e-mail:
-        </label>
-        <input type="text" name="email" placeholder="Для отправки ответа" id="email">
+          <input type="text" class="popup-input" name="email" placeholder="Для отправки ответа" id="email">
+        </label>        
         <label  class="popup-text" for="popup-text">Текст письма:
-        </label>
-        <textarea  name="popup-text" placeholder="В свободной форме" id="popup-text">В свободной форме</textarea>
-        <button type="submit" class="btn">Отправить</button>     
+          <textarea  name="popup-text" class="popup-textarea" placeholder="В свободной форме" id="popup-text">В свободной форме</textarea>
+        </label>        
+        <button type="submit" class="btn popup-submit">Отправить</button>     
       </form>
     </div>
     <div class="popup-map">
