@@ -14,22 +14,24 @@
   	<header class="main-heder">
       <div class="main-heder-container">
         <div  class="main-logo">
-          <a href="#">DEVICE</a>
+          <a href="#">DEVICE</a>          
         </div>
+
         <nav class="user-navigation">
           <form class="user-search" method="get" action="https://device.ru">
-            <label class="search-label" for="search">             
+            <label class="search-label" for="search">            
             </label>  
             <input class="search-input" id="search" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
+
           <div class="user-block">            
-            <div class="user-block-Loggedin">
-              <a href="#" class="user-block-contact user-block-id">Валентин Петухов</a>       
+            <div class="user-block-Loggedin user-block-Loggedin-active">
+              <a href="#" class="user-block-contact user-block-id user-block-link-user">Валентин Петухов</a>    
               <a href="#" class="user-block-contact user-block-exit">Выйти</a>
             </div>
-            <div class="user-block-Loggedon user-block-Loggedon-active">
-              <a href="#" class="user-block-contact entry">Войти</a>
+            <div class="user-block-Loggedon">
+              <a href="#" class="user-block-contact entry user-block-link-user">Войти</a>
             </div>
             <div class="user-block-compare-basket">
               <a href="#" class="user-block-contact compare">Сравнить</a>
@@ -37,11 +39,13 @@
             </div>
           </div>
         </nav>
+
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li class="main-menu-item">
-              <a href="#" >Каталог товаров</a>
-              <ul class="menu-catalog">
+            <li class="main-menu-item main-menu-item-menu-catalog">
+              <a href="#" class="menu-catalog-link">Каталог товаров</a>
+              <nav class="menu-catalog">
+              <ul>
                 <li class="menu-catalog-item">
                   <a href="#" >Виртуальная реальность</a>
                 </li>
@@ -61,6 +65,7 @@
                   <a href="#" >Квадрокоптеры</a>
                 </li>                          
               </ul>
+              </nav>
             </li>
             <li class="main-menu-item">
               <a href="#">Доставка</a>
@@ -75,6 +80,7 @@
         </nav>
       </div>
     </header>
+
     <main>      
       <div class="container">
         <h1 class="catalog-title">интеррнет магазин современных гаджетов</h1>

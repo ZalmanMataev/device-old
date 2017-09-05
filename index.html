@@ -16,18 +16,21 @@
         <div  class="main-logo">
           <a href="#">DEVICE</a>          
         </div>
+
         <nav class="user-navigation">
           <form class="user-search" method="get" action="https://device.ru">
-            <label class="search-label" for="search">             
+            <label class="search-label" for="search">            
             </label>  
             <input class="search-input" id="search" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
+
           <div class="user-block">            
             <div class="user-block-Loggedin">
               <a href="#" class="user-block-contact user-block-id">Валентин Петухов</a>    
               <a href="#" class="user-block-contact user-block-exit">Выйти</a>
             </div>
+
             <div class="user-block-Loggedon user-block-Loggedon-active">
               <a href="#" class="user-block-contact entry">Войти</a>
             </div>
@@ -37,10 +40,11 @@
             </div>
           </div>
         </nav>
+
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li class="main-menu-item">
-              <a href="#" >Каталог товаров</a>
+            <li class="main-menu-item main-menu-item-menu-catalog">
+              <a href="#" class="menu-catalog-link">Каталог товаров</a>
               <ul class="menu-catalog">
                 <li class="menu-catalog-item">
                   <a href="#" >Виртуальная реальность</a>
@@ -75,31 +79,34 @@
         </nav>
       </div>
     </header>
+
     <main>
       <h1 class="visually-hidden">интернет магазин современных гаджетов</h1>
       <div class="container">
-        <div class="promo-slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle" checked>
-          <input type="radio" id="btn-3" name="toggle" checked>
-          <div class="promo-slides">            
-            <div class="promo-slide" id="slide1">
+        <div class="promo-slider container">
+          <input class="promo-slider-input  promo-slider-input-slide-1" type="radio" id="btn-1" name="toggle" checked>
+          <input class="promo-slider-input  promo-slider-input-slide-2" type="radio" id="btn-2" name="toggle">
+          <input class="promo-slider-input  promo-slider-input-slide-3" type="radio" id="btn-3" name="toggle">
+          <div class="promo-slider-controls">
+            <label class="slider-controller" for="btn-1">Слайд 1</label>
+            <label class="slider-controller" for="btn-2">Слайд 2</label>
+            <label class="slider-controller" for="btn-3">Слайд 3</label>
+          </div>    
+            <div class="promo-slider-slide  promo-slider-slide-1">
               <div class="promo-slide-image">
                 <img src="img/slider-1.png" alt="Палки для селфи" width="384" height="486">
               </div>
               <div class="promo-slide-content">
-                <span class="promo-slide-number">
-                  01
-                </span>
                 <span class="promo-slide-slogan">
-                  Делай селфи, как Бен Стиллер!
+                  Делай селфи,<br>
+                  как Бен Стиллер!
                 </span>
                 <p class="promo-slide-description">
                   Самая длинная палка для селфи оступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
                 <a class="btn promo-slide-button" href="#" >
-                   Подробнее
+                  Подробнее
                 </a>
                  <table class="promo-slide-table">
                   <tr class="promo-slide-table-row">
@@ -115,18 +122,15 @@
                  </table>
               </div>
             </div> 
-            <div class="promo-slide" id="slide2">
+            <div class="promo-slider-slide  promo-slider-slide-2">
               <div class="promo-slide-image">
                 <img src="img/slider-2.png" alt="Браслет для бега" width="345" height="485">
               </div>
               <div class="promo-slide-content">
-                <span class="promo-slide-number">
-                  02
-                </span>
                 <span class="promo-slide-slogan">
                   Худеем правильно!
                 </span>
-                <p class="promo-slide-description">
+                <p class="promo-slide-description promo-slide-description-short">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
                  <a class="btn promo-slide-button" href="#" >
@@ -142,18 +146,15 @@
                  </table>
               </div>
             </div> 
-            <div class="promo-slide" id="slide3">
+            <div class="promo-slider-slide  promo-slider-slide-3">
               <div class="promo-slide-image">
                 <img src="img/slider-3.png" alt="квадрокоптер" width="526" height="334">
               </div>
               <div class="promo-slide-content">
-                <span class="promo-slide-number">
-                  03
-                </span>
                 <span class="promo-slide-slogan">
                   Порхает как бабочка, жалит как пчела!
                 </span>
-                <p class="promo-slide-description">
+                <p class="promo-slide-description promo-slide-description-short">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
                 <a class="btn promo-slide-button" href="#" >
@@ -171,13 +172,9 @@
                  </table>
               </div>
             </div>  
-          </div>        
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>            
-          </div>
+          </div>            
         </div>
+
         <section>
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="section-popular container">
@@ -290,7 +287,7 @@
             <a href="#" class="btn">Напишите нам</a>
           </section>          
         </div>
-      </div>      
+      
     </main>
     <footer class="page-footer"> 
       <div class="container">
